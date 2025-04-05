@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Sirius{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h2>Sirius</h2>
+        <nav>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/logout">Sair</a>
+        </nav>
+    </header>
+    <main class="site-content">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+
+</html>

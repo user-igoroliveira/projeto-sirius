@@ -1,0 +1,14 @@
+{
+    "name": "Sirius Dev",
+    "context": "..",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "sirius_api",
+    "workspaceFolder": "/app",
+    "settings": {
+        "python.pythonPath": "/app/venv/bin/python"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ]
+}
