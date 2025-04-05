@@ -1,7 +1,10 @@
 # app/auth/auth_handler.py
+import os
 from itsdangerous import URLSafeSerializer
+from dotenv import load_dotenv
 
-SECRET_KEY = "1234"  # Substitua por um segredo real
+load_dotenv()
+SECRET_KEY = os.getenv("SECRET_KEY", "default_secret_key")
 serializer = URLSafeSerializer(SECRET_KEY)
 
 def create_session(user_id: int):
